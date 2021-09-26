@@ -1,0 +1,25 @@
+plugins {
+    id "com.gradle.enterprise" version "3.4.1"
+}
+include ':app'
+
+buildCache {
+    local {
+        enabled = true
+        directory = new File(rootDir, 'build-cache')
+        removeUnusedEntriesAfterDays = 30
+    }
+    remote(HttpBuildCache) {
+        url = 'http://89.188.170.144/cache/'
+        allowUntrustedServer = true
+        enabled = true
+        push = true
+    }
+}
+include ':features'
+include ':features:profile'
+include ':features:main'
+include ':features:settings'
+include ':core'
+include ':core_api'
+include ':core_impl'

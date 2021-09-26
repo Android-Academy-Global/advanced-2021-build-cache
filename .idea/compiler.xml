@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7">
+      <module name="ArchitectureAdvanced.app" target="11" />
+      <module name="ArchitectureAdvanced.app.core" target="11" />
+      <module name="ArchitectureAdvanced.core" target="11" />
+      <module name="ArchitectureAdvanced.core_impl" target="11" />
+      <module name="ArchitectureAdvanced.features.main" target="11" />
+      <module name="ArchitectureAdvanced.features.profile" target="11" />
+      <module name="ArchitectureAdvanced.features.settings" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
